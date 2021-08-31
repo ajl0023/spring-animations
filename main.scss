@@ -1,0 +1,64 @@
+.spring-point {
+  width: 200px;
+  height: 200px;
+  top: 500px;
+  left: 50%;
+
+  position: absolute;
+
+  background-color: red;
+}
+canvas {
+  display: none;
+}
+
+body {
+  color: white;
+
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.line {
+  z-index: 234234345345564545634534545234;
+  width: 3px;
+  height: 500px;
+
+  transform-origin: top right;
+  position: absolute;
+  background-color: black;
+}
+.p1 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: orange;
+}
+.p2 {
+  width: 25px;
+  position: absolute;
+  height: 25px;
+  background-color: green;
+  z-index: 600000000;
+}
+.weight {
+  box-shadow: 0 12.5px 100px -10px rgb(50, 50, 73 / 40%),
+    0 10px 10px -10px rgb(50, 50, 73 / 30%);
+  background-color: blue;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: absolute;
+
+  height: 200px;
+  z-index: 12;
+}
+p {
+  position: absolute;
+  z-index: 123123;
+  font-size: 20px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
