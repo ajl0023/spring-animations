@@ -20,10 +20,6 @@ body {
   justify-content: center;
 }
 .line {
-  z-index: 234234345345564545634534545234;
-  width: 3px;
-  height: 500px;
-
   transform-origin: top right;
   position: absolute;
   background-color: black;
@@ -42,16 +38,56 @@ body {
   z-index: 600000000;
 }
 .weight {
+  width: 300px;
+  height: 300px;
+  top: 500px;
+  left: 50%;
+  will-change: transform;
   box-shadow: 0 12.5px 100px -10px rgb(50, 50, 73 / 40%),
     0 10px 10px -10px rgb(50, 50, 73 / 30%);
-  background-color: blue;
-  width: 200px;
+
   margin: 0 auto;
-  border-radius: 50%;
+
   position: absolute;
 
-  height: 200px;
   z-index: 12;
+  & > div {
+    letter-spacing: -0.002em;
+    font: 15px / 22px Inter, system-ui, sans-serif;
+    font-kerning: normal;
+    text-size-adjust: 100%;
+    color: rgb(36, 41, 46);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    user-select: none;
+    cursor: url(https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png)
+        39 39,
+      auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    vertical-align: baseline;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 45vh;
+    max-width: 150px;
+    height: 85vh;
+    max-height: 285px;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+      0 10px 10px -10px rgba(50, 50, 73, 0.3);
+    transform: perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(0deg)
+      scale(1);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg");
+  }
 }
 p {
   position: absolute;
@@ -61,4 +97,64 @@ p {
 body {
   width: 100vw;
   height: 100vh;
+}
+.spring-point2 {
+  width: 200px;
+  height: 200px;
+  top: 500px;
+  left: 0;
+
+  position: absolute;
+
+  background-color: red;
+}
+.spring-point3 {
+  width: 200px;
+  height: 200px;
+  top: 500px;
+  right: 0;
+
+  position: absolute;
+
+  background-color: red;
+}
+.w2 {
+  letter-spacing: -0.002em;
+  font: 15px / 22px Inter, system-ui, sans-serif;
+  font-kerning: normal;
+  text-size-adjust: 100%;
+  color: rgb(36, 41, 46);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  user-select: none;
+  cursor: url(https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png)
+      39 39,
+    auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  vertical-align: baseline;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-size: auto 85%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 45vh;
+  max-width: 150px;
+  height: 85vh;
+  max-height: 285px;
+  will-change: transform;
+  border-radius: 10px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+  transform: perspective(1500px) rotateX(30deg) rotateY(0.720848deg)
+    rotateZ(7.20848deg) scale(1);
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg");
+}
+.w3 {
+  background-color: aqua;
 }

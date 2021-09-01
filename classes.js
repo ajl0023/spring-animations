@@ -11,14 +11,17 @@ function Particle() {
   };
   this.move = function (exit) {
     if (exit) {
+      this.velocity.multiplyBy(0.5);
+   
       this.position.addTo(this.velocity);
-
-      this.ele.style.transform = `translate(${this.position._x}px,${this.position._y}px)`;
+      this.ele.style.left = `${this.position._x}px`;
+      console.log(this.position._x, "pos");
     } else {
+      console.log(this.friction)
       this.velocity.multiplyBy(this.friction);
 
       this.position.addTo(this.velocity);
-      this.ele.style.transform = `translate(${this.position._x}px,${this.position._y}px)`;
+      this.ele.style.left = `${this.position._x}px`;
     }
   };
 }
@@ -60,7 +63,6 @@ function Vector() {
   };
   this.addTo = function (v2) {
     this._x += v2.getX();
-    this._y += v2.getY();
   };
 
   this.multiply = function (val) {
